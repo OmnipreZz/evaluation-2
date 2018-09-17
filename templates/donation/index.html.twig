@@ -27,6 +27,7 @@
                 <td>
                     <a href="{{ path('donation_show', {'id': donation.id}) }}">show</a>
                     <a href="{{ path('donation_edit', {'id': donation.id}) }}">edit</a>
+                    <a href="{{ path('donation_delete', {'id': donation.id}) }}">delete</a>
                 </td>
             </tr>
         {% else %}
@@ -36,6 +37,4 @@
         {% endfor %}
         </tbody>
     </table>
-
-    <a href="{{ path('donation_new') }}">Create new</a>
 {% endblock %}
