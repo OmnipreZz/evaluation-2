@@ -21,7 +21,7 @@ class DonationController extends AbstractController
     public function home()
     {
         return $this->render('donation/home.html.twig', [
-            'title' => 'coucou',
+            'title' => 'Bienvenue sur LeBonCoin',
         ]);
     }
 
