@@ -8,6 +8,17 @@ use Symfony\Component\Routing\Annotation\Route;
 class DonationController extends AbstractController
 {
     /**
+     * @Route("/", name="home")
+     */
+    public function home()
+    {
+        return $this->render('donation/home.html.twig', [
+            'title' => 'coucou',
+        ]);
+    }
+
+
+    /**
      * @Route("/donation", name="donation")
      */
     public function index()
@@ -16,4 +27,5 @@ class DonationController extends AbstractController
             'controller_name' => 'DonationController',
         ]);
     }
+
 }
