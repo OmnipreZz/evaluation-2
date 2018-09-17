@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+<div class="container mt-5">
+    <h1>
+    </h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button type="submit" class="btn btn-dark">
+        Create
+    </button>
+    {{ form_end(form) }}
+
+</div>
+
+{% endblock %}
