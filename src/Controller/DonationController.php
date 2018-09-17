@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Donation;
+use App\Entity\Category;
 use App\Form\DonationType;
 use App\Repository\DonationRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
